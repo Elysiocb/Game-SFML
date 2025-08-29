@@ -1,4 +1,5 @@
 #include <SFML/Graphics.hpp>
+#include <iostream>
 
 int main()
 {
@@ -13,6 +14,20 @@ int main()
     // Centralizar a imagem
     sprite.setOrigin(sf::Vector2f(texture.getSize().x / 2.f, texture.getSize().y / 2.f));
     sprite.setPosition(sf::Vector2f(800.f / 2.f, 600.f / 2.f));
+
+    // Display the list of all the video modes available for fullscreen
+    std::vector<sf::VideoMode> modes = sf::VideoMode::getFullscreenModes();
+    for (std::size_t i = 0; i < modes.size(); ++i)
+    {
+        sf::VideoMode mode = modes[i];
+        std::cout << "Mode #" << i << ": "
+            << mode.size.x << "x" << mode.size.y << " - "
+            << mode.bitsPerPixel << " bpp" << std::endl;
+    }
+
+    // Create a window with the same pixel depth as the desktop
+    sf::VideoMode desktop = sf::VideoMode::getDesktopMode();
+    window.create(sf::VideoMode({ 1024, 768 }, desktop.bitsPerPixel), "SFML window");
 
     while (window.isOpen())
     {
