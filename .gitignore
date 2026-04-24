@@ -1,7 +1,7 @@
-# Pasta de assets, conforme solicitado
+# Asset folder as requested
 /assets/
 
-# Artefatos de compilação
+# Build artifacts
 /build/
 /bin/
 *.o
@@ -13,21 +13,21 @@
 *.exe
 *.out
 
-# Arquivos de IDE e editores
+# IDE and Editor files
 .vscode/
 .idea/
 *.suo
 *.user
 *.vcxproj.user
 
-# Arquivos específicos do Visual Studio
+# Visual Studio specific files
 .vs/
 /x64/
 /Debug/
 /Release/
 
-# Arquivos de log
+# Log files
 *.log
 
-# Arquivos de sistema (macOS)
+# System files (macOS)
 .DS_Store
