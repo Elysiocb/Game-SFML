@@ -31,6 +31,3 @@
 * **/assets**: Game resources including textures (`.png`) and fonts (`.ttf`).
 * **main.cpp**: Entry point containing the main game loop and scene management.
 
----
-
-**Academic Credit**: Developed by **Aldo Elysio Campos Barbosa** for the Multimedia Systems discipline, taught by Professor **Caio de Jesus Gregoratto**.
